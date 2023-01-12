@@ -61,7 +61,7 @@ class NojsLoggersController extends Controller
             // 'pms_state' => 'required',
         ]);
         $dataLogger = NojsLogger::create($request->all());
-        $this->ceckService($request);
+        //$this->ceckService($request);
         return response($dataLogger, 201);
     }
 
